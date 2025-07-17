@@ -1,0 +1,230 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fffaf0;
+  color: #333;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; 
+  z-index: 1000;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.container-1 a {
+    text-align: center;
+  color: white;
+  width: 300px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.container-1 a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.container-2 {
+  background: url('./coffeehouse.jpg') no-repeat center center/cover;
+  height: 500px;
+  position: relative;
+}
+
+.para {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.para1, .para2 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #444;
+}
+
+.about {
+  text-align: center;
+  padding: 40px 0 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  padding-top: 80px;
+}
+
+.para3 {
+  padding: 0 15%;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.para4 {
+  font-style: italic;
+  text-align: center;
+  background-color: #fac150;
+  border-left: 5px black ;
+  
+}
+
+.container-3 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.image {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.para5 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#menu {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  padding-top: 80px;
+}
+
+.menu {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.menu input[type="radio"] {
+  display: none;
+}
+
+.menu-tab {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 30px;
+  border: 2px solid#222;
+}
+
+.menu-tab label {
+  flex: 1;
+  max-width: 370px;
+  text-align: center;
+}
+
+
+#eat:checked ~ .menu-tab label[for="eat"],
+#drink:checked ~ .menu-tab label[for="drink"] {
+  background-color: #333;
+  color: white;
+}
+
+.p1, .p2 {
+  display: none;
+  text-align: left;
+  line-height: 1.6;
+  border: 2px solid #222;
+}
+
+.menu > #eat:checked ~ .p1 {
+  display: block;
+}
+
+.menu > #drink:checked ~ .p2 {
+  display: block;
+}
+
+.p1 h4, .p2 h4 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.image1 {
+  display: block;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+#where {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 50px;
+  padding-top: 80px; 
+}
+
+.para6, .para7, .para8 {
+  text-align: center;
+  margin: 20px 15%;
+  font-size: 16px;
+}
+
+.para7 span {
+  font-weight: bold;
+  color: #c00;
+}
+
+form {
+  text-align: center;
+}
+
+.textbox1 {
+  width: 80%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.textbox2 {
+  padding: 12px 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.textbox2:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  margin-top: 40px;
+}
